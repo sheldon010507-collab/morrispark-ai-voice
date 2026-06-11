@@ -1,0 +1,22 @@
+{
+  "public_availability": [
+    {
+      "label": "610 sq ft work zone",
+      "notes": "Publicly listed availability. Real-time status must be confirmed with the Morris Park team."
+    },
+    {
+      "label": "473 sq ft two-room space with reception area",
+      "notes": "Publicly listed availability. Real-time status must be confirmed with the Morris Park team."
+    },
+    {
+      "label": "yard space",
+      "notes": "Publicly listed availability. Real-time status must be confirmed with the Morris Park team."
+    },
+    {
+      "label": "MOT vehicle parking",
+      "price": "from £450/month",
+      "notes": "This is the only public price the demo should quote unless verified data is added."
+    }
+  ],
+  "source": "https://www.hmorrisgroup.co.uk/availability"
+}

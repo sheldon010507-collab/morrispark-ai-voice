@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Morris Park Voice</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="voice-shell">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Morris Park</p>
+          <h1>AI Voice Guide</h1>
+        </div>
+        <div class="status-cluster">
+          <span id="statusDot" class="status-dot"></span>
+          <span id="statusText">Tap to start</span>
+          <span id="backendBadge" class="badge">mock</span>
+        </div>
+      </header>
+
+      <section class="voice-stage" aria-live="polite">
+        <button id="orb" class="orb" type="button" aria-label="Start or pause Morris Park voice guide">
+          <span class="orb__cloud orb__cloud--one"></span>
+          <span class="orb__cloud orb__cloud--two"></span>
+          <span class="orb__cloud orb__cloud--three"></span>
+        </button>
+        <p id="caption" class="caption">Tap the orb and start speaking.</p>
+      </section>
+
+      <section class="hidden-telemetry" aria-hidden="true">
+        <div id="transcript"></div>
+        <pre id="ragBox">Waiting for a knowledge question...</pre>
+        <pre id="leadBox">No lead saved yet.</pre>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

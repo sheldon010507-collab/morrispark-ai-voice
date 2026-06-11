@@ -1,0 +1,23 @@
+{
+  "name": "Morris Park",
+  "type": "business park and commercial workspace location",
+  "address": "37 Rosyth Road, Glasgow G5 0YE",
+  "location_notes": [
+    "Morris Park is conveniently located next to the M74.",
+    "It is practical for businesses that need road access across Glasgow and beyond."
+  ],
+  "facilities": [
+    "high-speed Wi-Fi",
+    "on-site parking",
+    "CCTV security",
+    "shower facilities",
+    "on-site cafe",
+    "24-hour access where applicable",
+    "overnight security where applicable"
+  ],
+  "contact": {
+    "phone": "0141 225 0888",
+    "email": "info@hmorrisgroup.co.uk"
+  },
+  "source": "https://www.hmorrisgroup.co.uk/morrispark"
+}
