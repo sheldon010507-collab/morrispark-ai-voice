@@ -108,3 +108,26 @@ data/
 
 Remote demos need HTTPS for microphone access. Use Cloudflare Tunnel or ngrok
 and keep the password enabled.
+
+## Embed in a Static HTML Page
+
+Use `frontend/static/embed.html` as a full-page static embed, open
+`/embed.html` after deployment, or copy this iframe into an existing HTTPS page:
+
+```html
+<iframe
+  src="https://morrispark-ai-voice.vercel.app"
+  title="Morris Park AI Voice Guide"
+  allow="microphone; autoplay"
+  style="width: 100%; height: 720px; border: 0; border-radius: 16px; overflow: hidden;"
+></iframe>
+```
+
+The parent page must be served over HTTPS for microphone permission to work.
+During the demo, keep the Mac backend and tunnel running:
+
+```bash
+caffeinate -dimsu
+python3 backend/server.py
+npx localtunnel --port 8001 --subdomain morrispark-ai-voice
+```

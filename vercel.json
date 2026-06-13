@@ -16,6 +16,10 @@
       "dest": "/api/health.py"
     },
     {
+      "src": "/embed.html",
+      "dest": "/frontend/static/embed.html"
+    },
+    {
       "src": "/(.*\\.(?:css|js|json|png|jpg|jpeg|gif|webp|svg|ico|txt|map))",
       "dest": "/frontend/static/$1"
     },
