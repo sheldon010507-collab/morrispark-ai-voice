@@ -18,7 +18,7 @@
     {
       "src": "/embed.html",
       "headers": {
-        "Content-Security-Policy": "frame-ancestors *"
+        "Content-Security-Policy": "frame-ancestors 'self' https: http:"
       },
       "dest": "/frontend/static/embed.html"
     },
@@ -29,7 +29,7 @@
     {
       "src": "/(.*)",
       "headers": {
-        "Content-Security-Policy": "frame-ancestors *"
+        "Content-Security-Policy": "frame-ancestors 'self' https: http:"
       },
       "dest": "/frontend/static/index.html"
     }
