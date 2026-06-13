@@ -17,6 +17,9 @@
     },
     {
       "src": "/embed.html",
+      "headers": {
+        "Content-Security-Policy": "frame-ancestors *"
+      },
       "dest": "/frontend/static/embed.html"
     },
     {
@@ -25,6 +28,9 @@
     },
     {
       "src": "/(.*)",
+      "headers": {
+        "Content-Security-Policy": "frame-ancestors *"
+      },
       "dest": "/frontend/static/index.html"
     }
   ]
