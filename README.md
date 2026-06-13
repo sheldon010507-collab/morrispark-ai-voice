@@ -116,7 +116,7 @@ Use `frontend/static/embed.html` as a full-page static embed, open
 
 ```html
 <iframe
-  src="https://morrispark-ai-voice.vercel.app"
+  src="https://morrispark-ai-voice.vercel.app/embed.html"
   title="Morris Park AI Voice Guide"
   allow="microphone; autoplay"
   style="width: 100%; height: 720px; border: 0; border-radius: 16px; overflow: hidden;"
