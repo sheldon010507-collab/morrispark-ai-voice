@@ -131,3 +131,28 @@ caffeinate -dimsu
 python3 backend/server.py
 npx localtunnel --port 8001 --subdomain morrispark-ai-voice
 ```
+
+## Railway Backend
+
+For an always-on demo, deploy the backend to Railway and point Vercel at the
+Railway WebSocket URL. Railway should use `railway.json`, which starts the
+FastAPI WebSocket bridge on Railway's `$PORT`.
+
+Set these Railway variables:
+
+```text
+VOICECHAT_BACKEND=qwen-realtime
+DASHSCOPE_API_KEY=...
+QWEN_REALTIME_ENDPOINT=wss://dashscope-intl.aliyuncs.com/api-ws/v1/realtime
+QWEN_REALTIME_MODEL=qwen3.5-omni-flash-realtime
+QWEN_REALTIME_VOICE=Tina
+DEMO_PASSWORD=morris
+```
+
+After Railway gives you a public domain, set Vercel production:
+
+```text
+PUBLIC_WS_URL=wss://your-railway-domain.up.railway.app/ws
+VOICECHAT_BACKEND=qwen-realtime
+QWEN_REALTIME_MODEL=qwen3.5-omni-flash-realtime
+```
